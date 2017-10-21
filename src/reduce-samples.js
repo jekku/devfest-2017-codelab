@@ -1,11 +1,5 @@
 'use strict'
 
-export const rowMultiplication = (row) => {
-  var result = 1;
-
-  for (let i = 0; i < row.length; i++) {
-    result = result * row[i]
-  }
-
-  return result
+export const rowMultiplication = (numbers) => {
+  return numbers.reduce((acc, number) => acc * number, 1 )
 }
