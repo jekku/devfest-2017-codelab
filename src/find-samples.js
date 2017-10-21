@@ -1,17 +1,11 @@
 'use strict'
 
+import { isEven } from './commons'
+
 export const findLeftmostEven = (numbers) => {
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      return numbers[i]
-    }
-  }
+  return numbers.find(isEven)
 }
 
 export const findLeftmostOdd = (numbers) => {
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 !== 0) {
-      return numbers[i]
-    }
-  }
+  return numbers.find( (number) => !isEven(number))
 }

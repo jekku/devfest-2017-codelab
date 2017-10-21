@@ -1,25 +1,11 @@
 'use strict'
 
+import { isEven } from './commons'
+
 export const getOddNumbers = (numbers) => {
-  const result = []
-
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 !== 0) {
-      result.push(numbers[i])
-    }
-  }
-
-  return result
+  return numbers.filter( (number) => !isEven(number))
 }
 
 export const getEvenNumbers = (numbers) => {
-  const result = []
-
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      result.push(numbers[i])
-    }
-  }
-
-  return result
+  return numbers.filter(isEven)
 }
