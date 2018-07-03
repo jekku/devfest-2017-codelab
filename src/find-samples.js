@@ -18,11 +18,11 @@ export const findLeftmostOdd = (numbers) => {
 */
 export const findLeftmostEven = (numbers) => {
   const found = numbers.find(x=>x%2 == 0)
-  console.log(found)
+  //console.log(found)
   return found
 }
 export const findLeftmostOdd = (numbers) => {
   const found = numbers.find(x=>x%2 !== 0)
-  console.log(found)
+  //console.log(found)
   return found
 }
