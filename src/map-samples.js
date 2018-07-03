@@ -1,5 +1,5 @@
 'use strict'
-
+/*
 export const doubledValues = (numbers) => {
   const result = []
 
@@ -8,4 +8,10 @@ export const doubledValues = (numbers) => {
   }
 
   return result
+}
+*/ 
+export const doubledValues = (numbers) => {
+  const doub = numbers.map(x=>x*2)
+  //console.log(doub)
+  return doub
 }

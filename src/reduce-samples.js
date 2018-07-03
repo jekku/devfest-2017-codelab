@@ -1,5 +1,5 @@
 'use strict'
-
+/*
 export const rowMultiplication = (row) => {
   var result = 1;
 
@@ -9,3 +9,9 @@ export const rowMultiplication = (row) => {
 
   return result
 }
+*/
+export const rowMultiplication = (row) => {
+  const result = row.reduce(function(a,b){return a*b})
+  return result
+}
+
