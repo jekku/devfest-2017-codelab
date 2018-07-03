@@ -3,11 +3,17 @@
 export const getOddNumbers = (numbers) => {
   const result = []
 
-  for (let i = 0; i < numbers.length; i++) {
+  /*for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 !== 0) {
       result.push(numbers[i])
     }
-  }
+  }*/
+  
+  numbers.map(x => { 
+	  if(x % 2 != 0){
+	    result.push(x)
+	  }
+  })
 
   return result
 }
@@ -15,11 +21,16 @@ export const getOddNumbers = (numbers) => {
 export const getEvenNumbers = (numbers) => {
   const result = []
 
-  for (let i = 0; i < numbers.length; i++) {
+  /*for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0) {
       result.push(numbers[i])
     }
-  }
-
+  }*/
+  
+  numbers.map(x => {
+	  if(x % 2 == 0){
+	  result.push(x)
+	  }
+  })
   return result
 }
