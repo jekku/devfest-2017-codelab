@@ -9,7 +9,7 @@ export const getOddNumbers = (numbers) => {
     }
   }*/
   
-  numbers.map(x => { 
+  numbers.filter(x => { 
 	  if(x % 2 != 0){
 	    result.push(x)
 	  }
@@ -27,7 +27,7 @@ export const getEvenNumbers = (numbers) => {
     }
   }*/
   
-  numbers.map(x => {
+  numbers.filter(x => {
 	  if(x % 2 == 0){
 	  result.push(x)
 	  }
