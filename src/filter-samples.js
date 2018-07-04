@@ -1,25 +1,29 @@
 'use strict'
 
 export const getOddNumbers = (numbers) => {
-  const result = []
+  // const result = []
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 !== 0) {
-      result.push(numbers[i])
-    }
-  }
+  // for (let i = 0; i < numbers.length; i++) {
+  //   if (numbers[i] % 2 !== 0) {
+  //     result.push(numbers[i])
+  //   }
+  // }
+
+  const result =  numbers.filter(number =>  number % 2 !== 0 )
+
 
   return result
 }
 
 export const getEvenNumbers = (numbers) => {
-  const result = []
+  // const result = []
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      result.push(numbers[i])
-    }
-  }
+  // for (let i = 0; i < numbers.length; i++) {
+  //   if (numbers[i] % 2 === 0) {
+  //     result.push(numbers[i])
+  //   }
+  // }
+  const result = numbers.filter(number => number % 2 === 0)
 
   return result
 }
